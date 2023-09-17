@@ -11,4 +11,9 @@
         android:title="@string/item2_name"
         android:icon="@drawable/ic_web"/>
 
+    <item
+        android:id="@+id/bottom_nav_item3"
+        android:title="@string/item2_name"
+        android:icon="@drawable/ic_web"/>
+
 </menu>

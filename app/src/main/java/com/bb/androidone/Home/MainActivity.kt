@@ -1,8 +1,12 @@
-package com.bb.androidone
+package com.bb.androidone.Home
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.fragment.app.Fragment
+import com.bb.androidone.JSBFrag.JSBFragment
+import com.bb.androidone.RecyclerFrag.RecyclerViewFragment
+import com.bb.androidone.R
+import com.bb.androidone.WebViewFrag.WebViewFragment
 import com.google.android.material.bottomnavigation.BottomNavigationView
 
 class MainActivity : AppCompatActivity() {
@@ -14,12 +18,13 @@ class MainActivity : AppCompatActivity() {
 
         bottomNavView = findViewById(R.id.bottom_nav_view)
 
-        replaceFragment(HomeFragment())
+        replaceFragment(RecyclerViewFragment())
 
         bottomNavView.setOnItemSelectedListener {
             when (it.itemId) {
-                R.id.bottom_nav_item1 -> replaceFragment(HomeFragment())
+                R.id.bottom_nav_item1 -> replaceFragment(RecyclerViewFragment())
                 R.id.bottom_nav_item2 -> replaceFragment(WebViewFragment())
+                R.id.bottom_nav_item3 -> replaceFragment(JSBFragment())
             }
             true
         }

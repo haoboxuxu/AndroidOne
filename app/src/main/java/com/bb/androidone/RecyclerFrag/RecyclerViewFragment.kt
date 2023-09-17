@@ -1,4 +1,4 @@
-package com.bb.androidone
+package com.bb.androidone.RecyclerFrag
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -7,8 +7,9 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.bb.androidone.R
 
-class HomeFragment : Fragment() {
+class RecyclerViewFragment : Fragment() {
 
     private lateinit var fragmentHomeView: View
     private lateinit var recyclerView: RecyclerView
@@ -35,7 +36,7 @@ class HomeFragment : Fragment() {
         val layoutManager = LinearLayoutManager(context)
         recyclerView.layoutManager = layoutManager
 
-        recyclerView.adapter = HomeListAdapter(dataList)
+        recyclerView.adapter = MyListAdapter(dataList)
 
         return fragmentHomeView
     }

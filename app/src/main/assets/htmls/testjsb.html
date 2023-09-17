@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jsb test</title>
+
+    <script>
+        function testAlert() {
+            alert("this is a alert")
+        }
+
+        function testConfirm() {
+            var r = confirm("this is a confirm")
+            alert(r)
+        }
+
+        function testPrompt() {
+            var r = prompt("this is a prompt")
+            alert(r)
+        }
+    </script>
+</head>
+<body>
+    <input type="button" onclick="testAlert()" value="testAlert"/>
+    <input type="button" onclick="testConfirm()" value="testConfirm"/>
+    <input type="button" onclick="testPrompt()" value="testPrompt"/>
+</body>
+</html>
